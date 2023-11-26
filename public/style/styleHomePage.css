@@ -2,22 +2,22 @@
 
 @font-face {
   font-family: 'PoppinsReguler';
-  src: url('../assets/fonts/Poppins-Regular.woff') format('woff');
+  src: url('/fonts/Poppins-Regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'PoppinsBold';
-  src: url('../assets/fonts/Poppins-Bold.woff') format('woff');
+  src: url('/fonts/Poppins-Bold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'PoppinsSemiBold';
-  src: url('../assets/fonts/Poppins-SemiBold.woff') format('woff');
+  src: url('/fonts/Poppins-SemiBold.woff') format('woff');
 }
 
 @font-face {
   font-family: 'PoppinsExtraBold';
-  src: url('../assets/fonts/Poppins-ExtraBold.woff') format('woff');
+  src: url('/fonts/Poppins-ExtraBold.woff') format('woff');
 }
 
 body {
