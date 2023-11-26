@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: 'jumbopict login';
+}
+
+.jumbopict {
+  height: 100vh;
+  grid-area: jumbopict;
+  background-color: antiquewhite;
+  background-image: url('/img/assets/train2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login {
+  grid-area: login;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.signin {
+  width: 70%;
+  position: relative;
+}
+
+.login h1 {
+  align-self: flex-start;
+  margin-bottom: -1rem;
+  position: relative;
+}
+
+.form {
+  width: 70%;
+  margin-top: -5rem;
+  color: rgb(169, 166, 166);
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.1rem;
+  position: relative;
+}
+
+label {
+  align-self: flex-start;
+  color: rgb(169, 166, 166);
+}
+
+input {
+  padding: 1rem;
+  border: 1px solid rgb(169, 166, 166);
+  border-radius: 10px;
+  position: relative;
+}
+
+form a {
+  align-self: flex-end;
+}
+
+.termsOfUse {
+  align-self: flex-start;
+  color: rgb(169, 166, 166);
+}
+
+.button {
+  margin-top: -5rem;
+  width: 70%;
+  position: relative;
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(169, 166, 166);
+  color: rgb(255, 255, 255);
+  width: 12rem;
+  border-radius: 20px;
+  border: 1px solid;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+button:hover {
+  background-color: rgb(198, 194, 194);
+}
+
+@media screen and (width <=678px) {
+  .container {
+    background-image: url('assets/jumbo5.jpg');
+    background-position: center;
+    background-size: cover;
+    grid-template-columns: 1fr;
+    position: static;
+    color: white;
+  }
+
+  .login {
+    /* background-color: aliceblue; */
+    display: flex;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .button {
+    margin-top: 0;
+  }
+
+  .form {
+    margin-top: 0;
+    color: white;
+  }
+
+  .termsOfUse {
+    color: white;
+  }
+
+  .termsOfUse a {
+    color: grey;
+  }
+
+  label {
+    color: white;
+  }
+}
