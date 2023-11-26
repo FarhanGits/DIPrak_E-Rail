@@ -29,7 +29,7 @@
                         <div>TEMUKAN PERJALANANMU</div>
                     </a>
                     <a class="smallButton" href="">
-                        <img src="Vector.png" alt="" />
+                        <img src="{{ asset('img/Homepage/Vector.png') }}" alt="" />
                     </a>
                 </div>
 
