@@ -28,3 +28,7 @@ Route::get('/signup', function () {
 Route::get('/home', function () {
     return view('homepage');
 })->name('home');
+
+Route::get('/riwayat', function () {
+    return view('riwayat');
+})->name('riwayat');
