@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/pemesanan.css" />
+    <link rel="stylesheet" href="{{ asset('style/pemesanan.css') }}" />
     <title>Pesan Tiket</title>
 </head>
 
 <body>
     <header class="navbar">
-        <div class="container" >
+        <div class="container">
             <div class="logo">
                 <a href="">
                     <span class="right">eRail</span><span class="left"> Access</span>
@@ -18,7 +18,7 @@
             </div>
             <div class="search">
                 <input type="text" src="">
-                <img src="/assets/icons8-search-50.png" alt="">
+                <img src="{{ asset('img/assets/icons8-search-50.png') }}" alt="">
             </div>
             <ul class="nav-list">
                 <li><a href="">Beranda</a></li>
@@ -27,7 +27,7 @@
                 <li><a href="">Bantuan</a></li>
             </ul>
             <div class="profile">
-                <img src="/assets/fi_user.png" alt="">
+                <img src="{{ asset('img/assets/fi_user.png') }}" alt="">
             </div>
         </div>
     </header>
@@ -37,7 +37,7 @@
             <div class="route">
                 <li style="opacity: 30%;"><a href="">Home / &nbsp;</a></li>
                 <li style="opacity: 30%;"><a href="">Jadwal / &nbsp;</a></li>
-                <li><a href="/pesan-tiket.html">Pesan Tiket</a></li>
+                <li><a href="/pesan-tiket">Pesan Tiket</a></li>
             </div>
             <div class="step">
                 <li class=""><a href=""></a>Detail Tiket</li>
@@ -55,41 +55,49 @@
                 </div>
                 <div class="penumpang-content">
                     <form action="" class="form">
-                        <div >
+                        <div>
                             <div class="mb-3">
                                 <label for="nama">Nama Depan</label>
-                                <input type="text" name="nama" id="nama" class="form-control" placeholder="Ahmad"/>
+                                <input type="text" name="nama" id="nama" class="form-control"
+                                    placeholder="Ahmad" />
                             </div>
                             <div class="mb-3">
                                 <label for="no_hp">NIK</label>
-                                <input type="text" id="nik" name="nik" class="form-control" placeholder="08216330840"/>
+                                <input type="text" id="nik" name="nik" class="form-control"
+                                    placeholder="08216330840" />
                             </div>
                             <div class="mb-3">
                                 <label for="nama">Tempat Lahir</label>
-                                <input type="text" name="tempat" id="tempat" class="form-control" placeholder="Bangkalan"/>
+                                <input type="text" name="tempat" id="tempat" class="form-control"
+                                    placeholder="Bangkalan" />
                             </div>
                             <div class="mb-3">
                                 <label for="no_hp">Nomor Telepon</label>
-                                <input type="text" id="no_hp" name="no_hp" class="form-control" placeholder="08216330840"/>
+                                <input type="text" id="no_hp" name="no_hp" class="form-control"
+                                    placeholder="08216330840" />
                             </div>
                             <div class="mb-3">
                                 <label for="nama">Nama Belakang</label>
-                                <input type="text" name="nama" id="nama" class="form-control" placeholder="Rayhan"/>
+                                <input type="text" name="nama" id="nama" class="form-control"
+                                    placeholder="Rayhan" />
                             </div>
                             <div class="mb-3">
                                 <label for="jenis_kelamin">Jenis Kelamin</label> <br>
-                                <select name="jenis_kelamin" id="jenis_kelamin" class="form-control" style="width: 85%;">
+                                <select name="jenis_kelamin" id="jenis_kelamin" class="form-control"
+                                    style="width: 85%;">
                                     <option value="Laki-Laki">Laki-Laki</option>
                                     <option value="Perempuan">Perempuan</option>
                                 </select>
                             </div>
                             <div class="mb-3">
                                 <label for="tanggal_lahir">Tanggal Lahir</label>
-                                <input type="date" id="tanggal_lahir" name="tanggal_lahir" class="form-control" style="margin-top: 10px;">
+                                <input type="date" id="tanggal_lahir" name="tanggal_lahir" class="form-control"
+                                    style="margin-top: 10px;">
                             </div>
                             <div class="mb-3">
                                 <label for="email">Alamat Email</label>
-                                <input type="email" id="email" name="email" class="form-control" placeholder="contoh@gmail.com"/>
+                                <input type="email" id="email" name="email" class="form-control"
+                                    placeholder="contoh@gmail.com" />
                             </div>
                         </div>
                     </form>
@@ -104,20 +112,20 @@
                 <div class="price-content">
                     <div class="class">
                         <p>1x Tiket Pembelian</p>
+                    </div>
+                    <div class="detail">
+                        <li>Ekonomi (C)</li>
+                        <li>1 Kursi</li>
+                    </div>
+                    <hr>
+                    <div class="price">
+                        <p>Total</p>
+                        <p style="margin-left: 40%">Rp. 12.000,-</p>
+                    </div>
                 </div>
-                <div class="detail">
-                    <li>Ekonomi (C)</li>
-                    <li>1 Kursi</li>
+                <div class="next">
+                    <a href="/pembayaran"> Lanjutkan</a>
                 </div>
-                <hr>
-                <div class="price">
-                    <p>Total</p>
-                    <p style="margin-left: 40%">Rp. 12.000,-</p>
-                </div>
-            </div>
-            <div class="next">
-                <a href="/pembayaran.html"> Lanjutkan</a>
-            </div>
         </section>
     </main>
 
@@ -137,7 +145,8 @@
                         <form action="">
                             <div class="labelButton">
                                 <label for="">Enter Your Email</label>
-                                <button type="submit"><a href=""><img src="/assets/submit.png" alt=""></a></button>
+                                <button type="submit"><a href=""><img
+                                            src="{{ asset('img/assets/submit.png') }}" alt=""></a></button>
                             </div>
                             <input type="email" name="email" id="email">
                         </form>
@@ -154,13 +163,13 @@
                     <a href="">Customer Service</a>
                 </div>
                 <div class="sosmed">
-                    <a href=""><img src="/assets/fb.png" alt=""></a>
-                    <a href=""><img src="/assets/ig.png" alt=""></a>
-                    <a href=""><img src="/assets/twitter icon.png" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/fb.png') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/ig.png') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/twitter icon.png') }}" alt=""></a>
                 </div>
             </div>
     </footer>
-        
+
     </div>
 </body>
 

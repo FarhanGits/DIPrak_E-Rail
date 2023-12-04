@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/pemesanan.css" />
+    <link rel="stylesheet" href="{{ asset('style/pemesanan.css') }}" />
     <title>Pesan Tiket</title>
 </head>
 
 <body>
     <header class="navbar">
-        <div class="container" >
+        <div class="container">
             <div class="logo">
                 <a href="">
                     <span class="right">eRail</span><span class="left"> Access</span>
@@ -18,7 +18,7 @@
             </div>
             <div class="search">
                 <input type="text" src="">
-                <img src="/assets/icons8-search-50.png" alt="">
+                <img src="{{ asset('img/assets/icons8-search-50.png') }}" alt="">
             </div>
             <ul class="nav-list">
                 <li><a href="">Beranda</a></li>
@@ -27,7 +27,7 @@
                 <li><a href="">Bantuan</a></li>
             </ul>
             <div class="profile">
-                <img src="/assets/fi_user.png" alt="">
+                <img src="{{ asset('img/assets/fi_user.png') }}" alt="">
             </div>
         </div>
     </header>
@@ -37,7 +37,7 @@
             <div class="route">
                 <li style="opacity: 30%;"><a href="">Home / &nbsp;</a></li>
                 <li style="opacity: 30%;"><a href="">Jadwal / &nbsp;</a></li>
-                <li><a href="/pesan-tiket.html">Pesan Tiket</a></li>
+                <li><a href="/pesan-tiket">Pesan Tiket</a></li>
             </div>
             <div class="step">
                 <li class=""><a href=""></a>Detail Tiket</li>
@@ -58,15 +58,18 @@
                             <a href="">
                                 <p>Kartu Kredit</p>
                                 <div href="" class="buy-option">
-                                    <img style="height: 100%;" src="/assets/mastercard-3-svgrepo-com 1.png" alt="">
-                                    <img style="height: 100%;" src="/assets/visa-svgrepo-com 1.png" alt="">
+                                    <img style="height: 100%;"
+                                        src="{{ asset('img/assets/mastercard-3-svgrepo-com 1.png') }}" alt="">
+                                    <img style="height: 100%;" src="{{ asset('img/assets/visa-svgrepo-com 1.png') }}"
+                                        alt="">
                                 </div>
                             </a>
                             <a href="">
                                 <p>E-Wallet</p>
                                 <div href="" class="buy-option">
-                                    <img style="height: 50%;" src="/assets/shopee.png" alt="">
-                                    <img style="height: 50%; padding-left: 20px;" src="/assets/ovo.png" alt="">
+                                    <img style="height: 50%;" src="{{ asset('img/assets/shopee.png') }}" alt="">
+                                    <img style="height: 50%; padding-left: 20px;"
+                                        src="{{ asset('img/assets/ovo.png') }}" alt="">
                                 </div>
                             </a>
                         </div>
@@ -74,16 +77,18 @@
                             <a href="">
                                 <p>Transfer Bank</p>
                                 <div href="" class="buy-option">
-                                    <img src="/assets/bni.png" alt="">
-                                    <img src="/assets/mandiri.png" alt="">
-                                    <img src="/assets/bca.png" alt="">
+                                    <img src="{{ asset('img/assets/bni.png') }}" alt="">
+                                    <img src="{{ asset('img/assets/mandiri.png') }}" alt="">
+                                    <img src="{{ asset('img/assets/bca.png') }}" alt="">
                                 </div>
                             </a>
-                            <a href="" >
+                            <a href="">
                                 <p>Minimarket</p>
                                 <div href="" class="buy-option">
-                                    <img style="height: 50%;" src="/assets/alfamart.png" alt="">
-                                    <img style="height: 50%;" src="/assets/indomart.png" alt="">
+                                    <img style="height: 50%;" src="{{ asset('img/assets/alfamart.png') }}"
+                                        alt="">
+                                    <img style="height: 50%;" src="{{ asset('img/assets/indomart.png') }}"
+                                        alt="">
                                 </div>
                             </a>
                         </div>
@@ -103,7 +108,7 @@
                     </div>
                     <div class="tour-2">
                         <h1>Gubeng (GB)</h1>
-                        <img src="/assets/arrow.png" alt="">
+                        <img src="{{ asset('img/assets/arrow.png') }}" alt="">
                         <h1>Trunojoyo (TNJ)</h1>
                     </div>
                     <div class="fromto-2">
@@ -125,29 +130,29 @@
                             <p>1x Tiket Pembelian</p>
                             <p style="margin-left: 33%;">Rp. 21.645,00</p>
                         </div>
-                    <div class="detail">
-                        <div class="class-4">
-                            <p>Ekonomi (C)</p>
-                            <p style="margin-left: 43%;">Rp. 12.000,00</p>
+                        <div class="detail">
+                            <div class="class-4">
+                                <p>Ekonomi (C)</p>
+                                <p style="margin-left: 43%;">Rp. 12.000,00</p>
+                            </div>
+                            <div class="class-5">
+                                <p>1 Kursi</p>
+                                <p style="margin-left: 58%;">Rp. 7.500,00</p>
+                            </div>
+                            <div class="class-6">
+                                <p>PPN</p>
+                                <p style="margin-left: 63%;">Rp. 2.145,00</p>
+                            </div>
                         </div>
-                        <div class="class-5">
-                            <p>1 Kursi</p>
-                            <p style="margin-left: 58%;">Rp. 7.500,00</p>
-                        </div>
-                        <div class="class-6">
-                            <p>PPN</p>
-                            <p style="margin-left: 63%;">Rp. 2.145,00</p>
+                        <hr>
+                        <div class="price-1">
+                            <p>Total</p>
+                            <p style="margin-left: 50%">Rp. 12.000,-</p>
                         </div>
                     </div>
-                    <hr>
-                    <div class="price-1">
-                        <p>Total</p>
-                        <p style="margin-left: 50%">Rp. 12.000,-</p>
+                    <div class="next-1">
+                        <a href="/succes"> Lanjutkan</a>
                     </div>
-                </div>
-            <div class="next-1">
-                <a href="/succes.html"> Lanjutkan</a>
-            </div>
         </section>
     </main>
 
@@ -167,7 +172,8 @@
                         <form action="">
                             <div class="labelButton">
                                 <label for="">Enter Your Email</label>
-                                <button type="submit"><a href=""><img src="/assets/submit.png" alt=""></a></button>
+                                <button type="submit"><a href=""><img
+                                            src="{{ asset('img/assets/submit.png') }}" alt=""></a></button>
                             </div>
                             <input type="email" name="email" id="email">
                         </form>
@@ -184,13 +190,13 @@
                     <a href="">Customer Service</a>
                 </div>
                 <div class="sosmed">
-                    <a href=""><img src="/assets/fb.png" alt=""></a>
-                    <a href=""><img src="/assets/ig.png" alt=""></a>
-                    <a href=""><img src="/assets/twitter icon.png" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/fb.png') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/ig.png') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/twitter icon.png') }}" alt=""></a>
                 </div>
             </div>
     </footer>
-        
+
     </div>
 </body>
 

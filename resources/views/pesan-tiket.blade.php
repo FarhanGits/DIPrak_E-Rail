@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/pemesanan.css" />
+    <link rel="stylesheet" href="{{ asset('style/pemesanan.css') }}" />
     <title>Pesan Tiket</title>
 </head>
 
 <body>
     <header class="navbar">
-        <div class="container" >
+        <div class="container">
             <div class="logo">
                 <a href="">
                     <span class="right">eRail</span><span class="left"> Access</span>
@@ -18,7 +18,7 @@
             </div>
             <div class="search">
                 <input type="text" src="">
-                <img src="/assets/icons8-search-50.png" alt="">
+                <img src="{{ asset('img/assets/icons8-search-50.png') }}" alt="">
             </div>
             <ul class="nav-list">
                 <li><a href="">Beranda</a></li>
@@ -27,7 +27,7 @@
                 <li><a href="">Bantuan</a></li>
             </ul>
             <div class="profile">
-                <img src="/assets/fi_user.png" alt="">
+                <img src="{{ asset('img/assets/fi_user.png') }}" alt="">
             </div>
         </div>
     </header>
@@ -37,7 +37,7 @@
             <div class="route">
                 <li style="opacity: 30%;"><a href="">Home / &nbsp;</a></li>
                 <li style="opacity: 30%;"><a href="">Jadwal / &nbsp;</a></li>
-                <li><a href="/pesan-tiket.html">Pesan Tiket</a></li>
+                <li><a href="/pesan-tiket">Pesan Tiket</a></li>
             </div>
             <div class="step">
                 <li class="step1"><a href=""></a>Detail Tiket</li>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="tour">
                         <h1>Gubeng (GB)</h1>
-                        <img src="/assets/arrow.png" alt="">
+                        <img src="{{ asset('img/assets/arrow.png') }}" alt="">
                         <h1>Trunojoyo (TNJ)</h1>
                     </div>
                     <div class="fromto">
@@ -87,20 +87,20 @@
                 <div class="price-content">
                     <div class="class">
                         <p>1x Tiket Pembelian</p>
+                    </div>
+                    <div class="detail">
+                        <li>Ekonomi (C)</li>
+                        <li>1 Kursi</li>
+                    </div>
+                    <hr>
+                    <div class="price">
+                        <p>Total</p>
+                        <p style="margin-left: 40%">Rp. 12.000,-</p>
+                    </div>
                 </div>
-                <div class="detail">
-                    <li>Ekonomi (C)</li>
-                    <li>1 Kursi</li>
+                <div class="next">
+                    <a href="/penumpang"> Lanjutkan</a>
                 </div>
-                <hr>
-                <div class="price">
-                    <p>Total</p>
-                    <p style="margin-left: 40%">Rp. 12.000,-</p>
-                </div>
-            </div>
-            <div class="next">
-                <a href="/penumpang.html"> Lanjutkan</a>
-            </div>
         </section>
     </main>
 
@@ -120,7 +120,8 @@
                         <form action="">
                             <div class="labelButton">
                                 <label for="">Enter Your Email</label>
-                                <button type="submit"><a href=""><img src="/assets/submit.png" alt=""></a></button>
+                                <button type="submit"><a href=""><img src="{{ asset('img/assets/submit.png') }}"
+                                            alt=""></a></button>
                             </div>
                             <input type="email" name="email" id="email">
                         </form>
@@ -137,13 +138,13 @@
                     <a href="">Customer Service</a>
                 </div>
                 <div class="sosmed">
-                    <a href=""><img src="/assets/fb.png" alt=""></a>
-                    <a href=""><img src="/assets/ig.png" alt=""></a>
-                    <a href=""><img src="/assets/twitter icon.png" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/fb.png') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/ig.png') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/twitter icon.png') }}" alt=""></a>
                 </div>
             </div>
     </footer>
-        
+
     </div>
 </body>
 

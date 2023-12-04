@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/pemesanan.css" />
+    <link rel="stylesheet" href="{{ asset('style/pemesanan.css') }}" />
     <title>Pesan Tiket</title>
 </head>
 
 <body>
     <header class="navbar">
-        <div class="container" >
+        <div class="container">
             <div class="logo">
                 <a href="">
                     <span class="right">eRail</span><span class="left"> Access</span>
@@ -18,7 +18,7 @@
             </div>
             <div class="search">
                 <input type="text" src="">
-                <img src="/assets/icons8-search-50.png" alt="">
+                <img src="{{ asset('img/assets/icons8-search-50.png') }}" alt="">
             </div>
             <ul class="nav-list">
                 <li><a href="">Beranda</a></li>
@@ -27,7 +27,7 @@
                 <li><a href="">Bantuan</a></li>
             </ul>
             <div class="profile">
-                <img src="/assets/fi_user.png" alt="">
+                <img src="{{ asset('img/assets/fi_user.png') }}" alt="">
             </div>
         </div>
     </header>
@@ -37,7 +37,7 @@
             <div class="route">
                 <li style="opacity: 30%;"><a href="">Home / &nbsp;</a></li>
                 <li style="opacity: 30%;"><a href="">Jadwal / &nbsp;</a></li>
-                <li><a href="//pesan-tiket.html">Pesan Tiket</a></li>
+                <li><a href="/pesan-tiket">Pesan Tiket</a></li>
             </div>
             <div class="step">
                 <li class=""><a href=""></a>Detail Tiket</li>
@@ -49,10 +49,10 @@
         </section>
         <section class="succes">
             <div class="success">
-                <img src="/assets/Vector.png" alt="">
+                <img src="{{ asset('img/assets/Vector.png') }}" alt="">
                 <p style="color:cadetblue">Pembayaran Berhasil</p>
                 <p>Pesanan Anda berhasil diproses. <br>
-                silakan tekan tombol di bawah untuk menuju ke halaman selanjutnya.</p>
+                    silakan tekan tombol di bawah untuk menuju ke halaman selanjutnya.</p>
                 <div class="button">
                     <div class="lihat">
                         <a href="">Lihat Detail Pesanan</a>
@@ -81,7 +81,8 @@
                         <form action="">
                             <div class="labelButton">
                                 <label for="">Enter Your Email</label>
-                                <button type="submit"><a href=""><img src="/assets/submit.png" alt=""></a></button>
+                                <button type="submit"><a href=""><img src="{{ asset('img/assets/submit.png') }}"
+                                            alt=""></a></button>
                             </div>
                             <input type="email" name="email" id="email">
                         </form>
@@ -98,13 +99,13 @@
                     <a href="">Customer Service</a>
                 </div>
                 <div class="sosmed">
-                    <a href=""><img src="/assets/fb.png" alt=""></a>
-                    <a href=""><img src="/assets/ig.png" alt=""></a>
-                    <a href=""><img src="/assets/twitter icon.png" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/fb.png') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/ig.png') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/twitter icon.png') }}" alt=""></a>
                 </div>
             </div>
     </footer>
-        
+
     </div>
 </body>
 
