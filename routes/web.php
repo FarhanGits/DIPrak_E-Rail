@@ -32,3 +32,19 @@ Route::get('/home', function () {
 Route::get('/riwayat', function () {
     return view('riwayat');
 })->name('riwayat');
+
+Route::get('/pembayaran', function () {
+    return view('pembayaran');
+})->name('pembayaran');
+
+Route::get('/pesan-tiket', function () {
+    return view('pesan-tiket');
+})->name('pesan-tiket');
+
+Route::get('/penumpang', function () {
+    return view('penumpang');
+})->name('penumpang');
+
+Route::get('/success', function () {
+    return view('success');
+})->name('success');
