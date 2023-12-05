@@ -151,7 +151,7 @@
                         </div>
                     </div>
                     <div class="next-1">
-                        <a href="/succes"> Lanjutkan</a>
+                        <a href="/success"> Lanjutkan</a>
                     </div>
         </section>
     </main>

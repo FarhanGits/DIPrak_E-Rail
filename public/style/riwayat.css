@@ -1,12 +1,38 @@
+/* Import Font */
+
+@font-face {
+    font-family: 'PoppinsReguler';
+    src: url('/fonts/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('/fonts/Poppins-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PoppinsSemiBold';
+    src: url('/fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PoppinsExtraBold';
+    src: url('/fonts/Poppins-ExtraBold.woff') format('woff');
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+body {
     background-color: #F5F5F5;
 }
 
 nav {
-    padding: 20px 75px 20px;
+    padding: 24px 80px 24px;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +44,8 @@ nav {
 }
 
 .logo span {
-    font-size: 30px;
+    font-size: 35px;
+    font-family: 'PoppinsExtraBold', sans-serif;
 }
 
 .logo .blue-accent {
@@ -29,7 +56,27 @@ nav {
     color: black;
 }
 
-/* Buat Search */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 150%;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 15px;
+    opacity: 30%;
+}
+
+.search img {
+    position: absolute;
+    width: 1.5em;
+    background-color: #0B56A7;
+    border-radius: 50px;
+    transform: translateY(-120%);
+    left: 40.3em;
+}
 
 ul {
     display: flex;
@@ -37,9 +84,13 @@ ul {
 }
 
 ul li {
-    text-decoration: none;
     list-style: none;
     font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .profile_image {
@@ -48,4 +99,270 @@ ul li {
 
 .container {
     padding: 0px 75px 0px;
+    margin-top: 50px;
+    display: flex;
 }
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.filter-form {
+    width: 350px;
+    height: auto;
+    padding: 25px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 3px solid #000;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-devider {
+    width: 100%;
+    border: 0.5px solid gray;
+    margin: 20px 0px;
+}
+
+.filter1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filter-name img {
+    height: 10px;
+}
+
+.filter1-list {
+    display: flex;
+}
+
+.datefilter {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.datelabel {
+    font-size: 10px;
+}
+
+.filter2-list,
+.filter3-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#checkbox {
+    width: 40px;
+}
+
+.checkbox-label {
+    margin: 3px 0px 0px 10px;
+}
+
+.add-filter {
+    margin-top: 20px;
+    background-color: #0B56A7;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.reset-filter {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #F5F5F5;
+    color: #0B56A7;
+    border: 1px solid gray;
+    font-size: 18px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* .menu-item {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 10px;
+}
+
+.menu-item+.dropdown-content {
+    margin-top: 5px;
+}
+
+.dropdown-section:hover .dropdown-content {
+    max-height: 300px;
+} */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ticket {
+    border-radius: 10px;
+    border: 3px solid #000;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.ticket-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    background-color: #0B56A7;
+    color: white;
+}
+
+.header-info {
+    background-color: #0B56A7;
+}
+
+.header-status {
+    padding: 10px;
+    background-color: #D6EDFC;
+    color: #0B56A7;
+    border-radius: 5px;
+}
+
+.ticket-info {
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.ticket-route {
+    display: flex;
+    margin-top: 15px;
+}
+
+.ticket-route img {
+    height: 20px;
+    margin: 7px 15px 0px;
+}
+
+/* ---------------------------------------------------- All Card Font ---------------------------------------------------- */
+.headline {
+    font-size: 35px;
+    font-family: 'PoppinsBold';
+}
+
+.semilarge-text {
+    font-size: 24px;
+}
+
+.medium-text {
+    font-size: 20px;
+}
+
+.detail-text {
+    font-size: 15px;
+}
+
+/* ada lagi */
+
+/* ---------------------------------------------------- All Card Font ---------------------------------------------------- */

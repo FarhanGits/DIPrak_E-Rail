@@ -46,5 +46,5 @@ Route::get('/penumpang', function () {
 })->name('penumpang');
 
 Route::get('/success', function () {
-    return view('success');
+    return view('succes');
 })->name('success');

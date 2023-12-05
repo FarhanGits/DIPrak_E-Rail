@@ -2,28 +2,32 @@
 
 @font-face {
     font-family: 'PoppinsReguler';
-    src: url('../assets/fonts/Poppins-Regular.woff') format('woff');
+    src: url('/fonts/Poppins-Regular.woff') format('woff');
 }
+
 @font-face {
     font-family: 'PoppinsBold';
-    src: url('../assets/fonts/Poppins-Bold.woff') format('woff');
+    src: url('/fonts/Poppins-Bold.woff') format('woff');
 }
+
 @font-face {
     font-family: 'PoppinsSemiBold';
-    src: url('../assets/fonts/Poppins-SemiBold.woff') format('woff');
+    src: url('/fonts/Poppins-SemiBold.woff') format('woff');
 }
+
 @font-face {
     font-family: 'PoppinsExtraBold';
-    src: url('../assets/fonts/Poppins-ExtraBold.woff') format('woff');
+    src: url('/fonts/Poppins-ExtraBold.woff') format('woff');
 }
 
 body {
-margin: 0;
-padding: 0;
-background-color: white;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
 
-a, li {
+a,
+li {
     text-decoration: none;
 }
 
@@ -35,10 +39,10 @@ input {
 }
 
 main {
-height: 100%;
-width: 100vw;
-margin-left: 80px;
-margin-right: 80px;
+    height: 100%;
+    width: 100vw;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .navbar {
@@ -62,7 +66,7 @@ margin-right: 80px;
     font-size: 30px;
     font-family: 'PoppinsExtraBold', sans-serif;
 }
-    
+
 .logo .right {
     color: #0B56A7;
 }
@@ -142,9 +146,9 @@ section {
     border: 2px solid #202020;
     border-radius: 50px;
     align-items: center;
-    box-shadow: 9px 10px 0px 0px rgba(0,0,0,1);
-    -webkit-box-shadow: 9px 10px 0px 0px rgba(0,0,0,1);
-    -moz-box-shadow: 9px 10px 0px 0px rgba(0,0,0,1);
+    box-shadow: 9px 10px 0px 0px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 9px 10px 0px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 9px 10px 0px 0px rgba(0, 0, 0, 1);
 }
 
 .step li {
@@ -355,7 +359,7 @@ section {
 
 .penumpang-content .mb-3 {
     margin-left: 40px;
-    display:grid;
+    display: grid;
     padding-top: 13px;
     padding-bottom: 20px;
 }
@@ -469,6 +473,7 @@ section {
     font-size: 15px;
     height: 30px;
 }
+
 .class-5 {
     font-family: 'PoppinsReguler';
     column-count: 2;
@@ -476,6 +481,7 @@ section {
     font-size: 15px;
     height: 30px;
 }
+
 .class-6 {
     font-family: 'PoppinsReguler';
     column-count: 2;
@@ -626,75 +632,84 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .logoFooter a:first-child {
+}
+
+.logoFooter a:first-child {
     color: white;
-  }
-  .logoFooter a:nth-child(2) {
+}
+
+.logoFooter a:nth-child(2) {
     color: black;
-  }
-  
-  .sub-row1 {
+}
+
+.sub-row1 {
     color: white;
     width: 80%;
     display: flex;
     justify-content: space-between;
-  }
-  .sub-row1-column1 p:first-child {
+}
+
+.sub-row1-column1 p:first-child {
     font-weight: bold;
     margin-bottom: -10px;
     font-family: 'PoppinsSemiBold', sans-serif;
-  }
-  .sub-row1-column1 p:nth-child(2) {
+}
+
+.sub-row1-column1 p:nth-child(2) {
     font-size: 12px;
     font-family: 'PoppinsReguler', sans-serif;
-  }
-  .sub-row1-column1 {
+}
+
+.sub-row1-column1 {
     width: max-content;
-  }
-  .sub-row1-column2 {
+}
+
+.sub-row1-column2 {
     font-family: 'PoppinsReguler', sans-serif;
     width: 60%;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-  }
-  
-  form {
+}
+
+form {
     font-size: 12px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-  }
-  .sub-row1-column2 input {
-    border: none; /* Hapus border di sisi lain */
-    border-bottom: 1px solid #ffffff; /* Atur border bawah dengan warna dan lebar sesuai kebutuhan */
+}
+
+.sub-row1-column2 input {
+    border: none;
+    /* Hapus border di sisi lain */
+    border-bottom: 1px solid #ffffff;
+    /* Atur border bawah dengan warna dan lebar sesuai kebutuhan */
     outline: none;
     background-color: rgba(255, 255, 255, 0);
-  }
-  
-  .labelButton {
+}
+
+.labelButton {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .labelButton button {
+}
+
+.labelButton button {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     margin-right: 10px;
-  }
-  
-  .labelButton img {
+}
+
+.labelButton img {
     width: 15px;
-  }
-  
-  .labelButton label {
+}
+
+.labelButton label {
     margin-left: 15px;
-  }
-  
-  .row2 {
+}
+
+.row2 {
     font-family: 'PoppinsReguler', sans-serif;
     font-size: 12px;
     color: white;
@@ -704,20 +719,20 @@ footer {
     align-items: center;
     height: 40px;
     width: 100%;
-  }
-  
-  .row2 .nav-menu {
+}
+
+.row2 .nav-menu {
     width: 50%;
     display: flex;
     justify-content: space-between;
-  }
-  
-  .row2 .sosmed {
+}
+
+.row2 .sosmed {
     width: 150px;
     display: flex;
     justify-content: space-around;
-  }
-  
-  .row2 a {
+}
+
+.row2 a {
     color: white;
-  }
+}
