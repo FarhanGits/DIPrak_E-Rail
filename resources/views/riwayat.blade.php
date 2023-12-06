@@ -128,7 +128,9 @@
         </div>
 
         <div class="content">
-            <a href="" class="ticket">
+
+            {{-- Tiket 1 --}}
+            <a href="/detail" class="ticket">
                 <div class="ticket-header">
                     <div class="header-info">
                         <p class="headline">Surabaya - Bangkalan</p>
@@ -168,7 +170,7 @@
             </a>
 
             {{-- Tiket 2 --}}
-            <a href="" class="ticket">
+            <a href="/detail" class="ticket">
                 <div class="ticket-header">
                     <div class="header-info">
                         <p class="headline">Surabaya - Bangkalan</p>
@@ -208,7 +210,7 @@
             </a>
 
             {{-- Tiket 3 --}}
-            <a href="" class="ticket">
+            <a href="/detail" class="ticket">
                 <div class="ticket-header">
                     <div class="header-info">
                         <p class="headline">Surabaya - Bangkalan</p>
