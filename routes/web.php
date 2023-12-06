@@ -48,3 +48,7 @@ Route::get('/penumpang', function () {
 Route::get('/success', function () {
     return view('succes');
 })->name('success');
+
+Route::get('/detail', function () {
+    return view('detail-tiket');
+})->name('detail');
