@@ -48,3 +48,15 @@ Route::get('/penumpang', function () {
 Route::get('/success', function () {
     return view('success');
 })->name('success');
+
+Route::get('/pemesanan/empty', function () {
+    return view('empty');
+})->name('empty');
+
+Route::get('/pemesanan', function () {
+    return view('pemesanan');
+})->name('pemesanan');
+
+Route::get('/pilih-kursi', function () {
+    return view('pilih-kursi');
+})->name('pilih-kursi');
