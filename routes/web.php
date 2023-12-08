@@ -60,3 +60,7 @@ Route::get('/pemesanan', function () {
 Route::get('/pilih-kursi', function () {
     return view('pilih-kursi');
 })->name('pilih-kursi');
+
+Route::get('/detail', function () {
+    return view('detail-tiket');
+})->name('detail');
