@@ -16,7 +16,7 @@
         <div class="login">
             <div class="signin">
                 <h1>Create an account</h1>
-                <p>Already have an account? <a href="/login">Login</a></p>
+                <p>Already have an account? <a href="/">Login</a></p>
             </div>
 
             <div class="form">
