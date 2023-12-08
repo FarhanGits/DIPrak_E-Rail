@@ -46,8 +46,20 @@ Route::get('/penumpang', function () {
 })->name('penumpang');
 
 Route::get('/success', function () {
-    return view('succes');
+    return view('success');
 })->name('success');
+
+Route::get('/pemesanan/empty', function () {
+    return view('empty');
+})->name('empty');
+
+Route::get('/pemesanan', function () {
+    return view('pemesanan');
+})->name('pemesanan');
+
+Route::get('/pilih-kursi', function () {
+    return view('pilih-kursi');
+})->name('pilih-kursi');
 
 Route::get('/detail', function () {
     return view('detail-tiket');
