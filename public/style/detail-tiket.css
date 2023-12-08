@@ -96,6 +96,7 @@ body {
     display: flex;
     align-items: center;
     margin: 35px 0px;
+    font-size: 28px;
 }
 
 .train-detail img {
@@ -115,6 +116,17 @@ body {
 .pembayaran {
     display: flex;
     justify-content: space-between;
+    font-size: 20px;
+}
+
+.kode,
+.info-pen,
+.rincian,
+.total,
+.kursi,
+.ppn {
+    margin-bottom: 40px;
+    font-size: 20px;
 }
 
 .detail-devider {
@@ -130,6 +142,19 @@ body {
 .nama {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.rincian,
+.info-pen,
+.total-pem {
+    color: #0B56A7;
+    font-family: 'PoppinsBold';
+}
+
+.pembayaran {
+    margin-top: 40px;
+    font-size: 24px;
 }
 
 .mid-detail {

@@ -50,36 +50,36 @@
                     </div>
                     <div class="tanggal">
                         <p>C91F92CJ77YP8NW</p>
-                        <P>10 Oktober 2023</P>
+                        <P><strong>10 Oktober 2023</strong></P>
                     </div>
                 </div>
                 <span class="detail-devider"></span>
                 <div class="undertop-detail">
-                    <p>INFORMASI PENUMPANG</p>
+                    <p class="info-pen">INFORMASI PENUMPANG</p>
                     <div class="nama">
-                        <p>Ahmad Rayhan</p>
-                        <P>Ekonomi (C) 7 / 10 A</P>
+                        <p style="font-size: 28px"><strong>Ahmad Rayhan</strong></p>
+                        <P style="font-size: 20px"><strong>Ekonomi (C) 7 / 10 A</strong></P>
                     </div>
                 </div>
                 <span class="detail-devider"></span>
                 <div class="mid-detail">
-                    <p>RINCIAN PEMBAYARAN</p>
+                    <p class="rincian">RINCIAN PEMBAYARAN</p>
                     <div class="total">
                         <p>TOTAL TIKET</p>
-                        <P>Rp 12.000 x 1</P>
+                        <P><strong>Rp 12.000 x 1</strong></P>
                     </div>
                     <div class="kursi">
                         <p>BIAYA PILIH KURSI</p>
-                        <P>Rp 7.500</P>
+                        <P><strong>Rp 7.500</strong></P>
                     </div>
                     <div class="ppn">
                         <p>PPN</p>
-                        <P>Rp 2.145</P>
+                        <P><strong>Rp 2.145</strong></P>
                     </div>
                     <span class="detail-devider"></span>
                     <div class="pembayaran">
-                        <p>TOTAL PEMBAYARAN</p>
-                        <P>Rp 21.645</P>
+                        <p class="total-pem">TOTAL PEMBAYARAN</p>
+                        <P><strong>Rp 21.645</strong></P>
                     </div>
                 </div>
             </div>
