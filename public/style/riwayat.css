@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F5F5F5;
+}
+
+nav {
+    padding: 20px 75px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bolder;
+}
+
+.logo span {
+    font-size: 30px;
+}
+
+.logo .blue-accent {
+    color: #0B56A7;
+}
+
+.logo .black-accent {
+    color: black;
+}
+
+/* Buat Search */
+
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 20px;
+}
+
+.profile_image {
+    height: 40px;
+}
+
+.container {
+    padding: 0px 75px 0px;
+}
