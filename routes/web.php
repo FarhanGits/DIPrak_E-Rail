@@ -28,3 +28,7 @@ Route::get('/signup', function () {
 Route::get('/home', function () {
     return view('homepage');
 })->name('home');
+
+Route::get('/helpcentre', function () {
+    return view('helpcentre');
+})->name('helpcentre');
