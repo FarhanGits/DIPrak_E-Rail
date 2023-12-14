@@ -12,7 +12,7 @@
     <header class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="">
+                <a href="/pemesanan">
                     <span class="right">eRail</span><span class="left"> Access</span>
                 </a>
             </div>
@@ -21,10 +21,10 @@
                 <img src="{{ asset('img/assets/icons8-search-50.png') }}" alt="">
             </div>
             <ul class="nav-list">
-                <li><a href="">Beranda</a></li>
-                <li><a href="">Pemesanan</a></li>
-                <li><a href="">Riwayat</a></li>
-                <li><a href="">Bantuan</a></li>
+                <li><a href="/home">Beranda</a></li>
+                <li><a href="/pemesanan">Pemesanan</a></li>
+                <li><a href="/riwayat">Riwayat</a></li>
+                <li><a href="/help-center">Bantuan</a></li>
             </ul>
             <div class="profile">
                 <img src="{{ asset('img/assets/fi_user.png') }}" alt="">
@@ -55,10 +55,10 @@
                     silakan tekan tombol di bawah untuk menuju ke halaman selanjutnya.</p>
                 <div class="button">
                     <div class="lihat">
-                        <a href="">Lihat Detail Pesanan</a>
+                        <a href="/riwayat">Lihat Detail Pesanan</a>
                     </div>
                     <div class="home">
-                        <a href="">Halaman Utama</a>
+                        <a href="/pemesanan">Halaman Utama</a>
                     </div>
                 </div>
             </div>

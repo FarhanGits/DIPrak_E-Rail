@@ -25,20 +25,20 @@
                 <div class="subtitle">Train booking is a process of choosing and purchasing train seats online. It is an
                     easy process but were are here to make it much better & simple.</div>
                 <div class="button">
-                    <a class="bigButton" href="">
+                    <a class="bigButton" href="/pemesanan">
                         <div>TEMUKAN PERJALANANMU</div>
                     </a>
-                    <a class="smallButton" href="">
+                    <a class="smallButton" href="/pemesanan">
                         <img src="{{ asset('img/Homepage/Vector.png') }}" alt="" />
                     </a>
                 </div>
 
                 <div class="option">
-                    <a href="">
+                    <a href="/pemesanan">
                         <div class="option-1">Mari Rencanakan Liburanmu! ></div>
                     </a>
 
-                    <a href="">
+                    <a href="/pemesanan">
                         <div class="option-2">Lihat Paket Liburan Disini! ></div>
                     </a>
                 </div>

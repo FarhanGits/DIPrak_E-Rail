@@ -30,35 +30,52 @@ body {
     background-color: #F5F5F5;
 }
 
-nav {
-    padding: 24px 80px 24px;
-    position: relative;
+a,
+li {
+    text-decoration: none;
+}
+
+button,
+input {
+    background: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.navbar {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: relative;
+    top: 24px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.navbar .nav-container {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
-.logo {
+.navbar .logo {
     font-weight: bolder;
-}
-
-.logo span {
-    font-size: 35px;
+    text-decoration: none;
+    font-size: 30px;
     font-family: 'PoppinsExtraBold', sans-serif;
 }
 
-.logo .blue-accent {
+.logo .right {
     color: #0B56A7;
 }
 
-.logo .black-accent {
-    color: black;
+.logo .left {
+    color: #202020;
 }
 
 .search {
-    display: flex;
-    align-items: center;
+    flex: 1;
+    margin-left: 175px;
+    margin-right: 140px;
 }
 
 input {
@@ -78,23 +95,26 @@ input {
     left: 40.3em;
 }
 
-ul {
-    display: flex;
-    gap: 20px;
-}
-
-ul li {
+.nav-list {
     list-style: none;
-    font-size: 20px;
+    display: flex;
+    font-family: 'PoppinsReguler';
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.nav-list li {
+    margin-right: 1.5rem;
 }
 
-.profile_image {
-    height: 40px;
+.nav-list a {
+    color: #202020;
+}
+
+.profile {
+    margin-left: 20vh;
+}
+
+.profile img {
+    width: 2em;
 }
 
 .container {
@@ -306,6 +326,7 @@ input:checked+.slider:before {
     border: 3px solid #000;
     margin-top: 50px;
     width: 100%;
+    color: black;
 }
 
 .ticket-header {
@@ -343,6 +364,130 @@ input:checked+.slider:before {
 .ticket-route img {
     height: 20px;
     margin: 7px 15px 0px;
+}
+
+footer {
+    background-color: rgba(11, 86, 167, 1);
+    height: 300px;
+    padding: 80px;
+    box-sizing: border-box;
+    margin-top: 200px;
+}
+
+.logoFooter a {
+    font-family: 'PoppinsExtraBold', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoFooter a:first-child {
+    color: white;
+}
+
+.logoFooter a:nth-child(2) {
+    color: black;
+}
+
+.sub-row1 {
+    color: white;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-row1-column1 p:first-child {
+    font-weight: bold;
+    margin-bottom: -10px;
+    font-family: 'PoppinsSemiBold', sans-serif;
+}
+
+.sub-row1-column1 p:nth-child(2) {
+    font-size: 12px;
+    font-family: 'PoppinsReguler', sans-serif;
+}
+
+.sub-row1-column1 {
+    width: max-content;
+}
+
+.sub-row1-column2 {
+    font-family: 'PoppinsReguler', sans-serif;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+form {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.sub-row1-column2 input {
+    border: none;
+    /* Hapus border di sisi lain */
+    border-bottom: 1px solid #ffffff;
+    /* Atur border bawah dengan warna dan lebar sesuai kebutuhan */
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.labelButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.labelButton button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-right: 10px;
+}
+
+.labelButton img {
+    width: 15px;
+}
+
+.labelButton label {
+    margin-left: 15px;
+}
+
+.row2 {
+    font-family: 'PoppinsReguler', sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.row2 .nav-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row2 .sosmed {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row2 a {
+    color: white;
 }
 
 /* ---------------------------------------------------- All Card Font ---------------------------------------------------- */

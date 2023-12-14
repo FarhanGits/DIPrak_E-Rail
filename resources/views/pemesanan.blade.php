@@ -13,7 +13,7 @@
     <header class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="">
+                <a href="/pemesanan">
                     <span class="right">eRail</span><span class="left"> Access</span>
                 </a>
             </div>
@@ -22,10 +22,10 @@
                 <img src="{{ asset('img/assets/icons8-search-50.png') }}" alt="">
             </div>
             <ul class="nav-list">
-                <li><a href="">Beranda</a></li>
-                <li><a href="">Pemesanan</a></li>
-                <li><a href="">Riwayat</a></li>
-                <li><a href="">Bantuan</a></li>
+                <li><a href="/home">Beranda</a></li>
+                <li><a href="/pemesanan">Pemesanan</a></li>
+                <li><a href="/riwayat">Riwayat</a></li>
+                <li><a href="/help-center">Bantuan</a></li>
             </ul>
             <div class="profile">
                 <img src="{{ asset('img/assets/fi_user.png') }}" alt="">
@@ -347,7 +347,7 @@
                         </div>
 
                         <div class="flex flex-col gap-8 mt-3">
-                            <div class="rounded-lg border-2 border-black">
+                            <a href="/pesan-tiket" class="rounded-lg border-2 border-black">
                                 <div class="px-6 py-4 bg-[#0B56A7] flex justify-between">
                                     <h1 class="text-white text-xl font-bold">Commuter Line Arjonegoro (502)</h1>
                                     <div>
@@ -384,8 +384,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="rounded-lg border-2 border-black">
+                            </a>
+                            <a href="/pesan-tiket" class="rounded-lg border-2 border-black">
                                 <div class="px-6 py-4 bg-[#0B56A7] flex justify-between">
                                     <h1 class="text-white text-xl font-bold">Commuter Line Arjonegoro (502)</h1>
                                     <div>
@@ -422,8 +422,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="rounded-lg border-2 border-black">
+                            </a>
+                            <a href="/pesan-tiket" class="rounded-lg border-2 border-black">
                                 <div class="px-6 py-4 bg-[#0B56A7] flex justify-between">
                                     <h1 class="text-white text-xl font-bold">Commuter Line Arjonegoro (502)</h1>
                                     <div>
@@ -460,7 +460,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

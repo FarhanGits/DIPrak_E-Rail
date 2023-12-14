@@ -10,29 +10,28 @@
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <span class="blue-accent">eRail</span>
-            <span class="black-accent">Access</span>
-        </div>
-        <div class="search">
-            <input type="search" name="" id="">
-            <img src="{{ asset('img/assets/icons8-search-50.png') }}" alt="" srcset="">
-        </div>
-        <div class="link">
-            <ul>
-                <li><a href="">Beranda</a></li>
-                <li><a href="">Pemesanan</a></li>
-                <li><a href="">Riwayat</a></li>
-                <li><a href="">Bantuan</a></li>
-            </ul>
-        </div>
-        <a href="">
-            <div class="profile">
-                <img src="{{ asset('img/assets/user_profile.svg') }}" class="profile_image" alt="Profile">
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="/pemesanan">
+                    <span class="right">eRail</span><span class="left"> Access</span>
+                </a>
             </div>
-        </a>
-    </nav>
+            <div class="search">
+                <input type="text" src="">
+                <img src="{{ asset('img/assets/icons8-search-50.png') }}" alt="">
+            </div>
+            <ul class="nav-list">
+                <li><a href="/home">Beranda</a></li>
+                <li><a href="/pemesanan">Pemesanan</a></li>
+                <li><a href="/riwayat">Riwayat</a></li>
+                <li><a href="/help-center">Bantuan</a></li>
+            </ul>
+            <div class="profile">
+                <img src="{{ asset('img/assets/fi_user.png') }}" alt="">
+            </div>
+        </div>
+    </header>
 
     <div class="container">
         <div class="filter">
@@ -252,8 +251,44 @@
     </div>
 
     <footer>
-        <div class="top-footer"></div>
-        <div class="bottom-footer"></div>
+        <div>
+            <div class="row1">
+                <div class="logoFooter">
+                    <a href="">eRail</a>
+                    <a href="">Access</a>
+                </div>
+                <div class="sub-row1">
+                    <div class="sub-row1-column1">
+                        <p>Planning your next trip?</p>
+                        <p>Subscribe toour newsletter. Get the latest travel trends & deals!6</p>
+                    </div>
+                    <div class="sub-row1-column2">
+                        <form action="">
+                            <div class="labelButton">
+                                <label for="">Enter Your Email</label>
+                                <button type="submit"><a href=""><img
+                                            src="{{ asset('img/assets/submit.png') }}" alt=""></a></button>
+                            </div>
+                            <input type="email" name="email" id="email">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="nav-menu">
+                    <a href="">About Us</a>
+                    <a href="">Mobile</a>
+                    <a href="">Privacy</a>
+                    <a href="">Terms of use</a>
+                    <a href="">Career</a>
+                    <a href="">Customer Service</a>
+                </div>
+                <div class="sosmed">
+                    <a href=""><img src="{{ asset('img/assets/fb.png') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/ig.png') }}" alt=""></a>
+                    <a href=""><img src="{{ asset('img/assets/twitter icon.png') }}" alt=""></a>
+                </div>
+            </div>
     </footer>
 
     <script src="{{ asset('script/script.js') }}"></script>

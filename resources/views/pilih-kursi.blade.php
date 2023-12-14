@@ -13,7 +13,7 @@
     <header class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="">
+                <a href="/pemesanan">
                     <span class="right">eRail</span><span class="left"> Access</span>
                 </a>
             </div>
@@ -22,10 +22,10 @@
                 <img src="{{ asset('img/assets/icons8-search-50.png') }}" alt="">
             </div>
             <ul class="nav-list">
-                <li><a href="">Beranda</a></li>
-                <li><a href="">Pemesanan</a></li>
-                <li><a href="">Riwayat</a></li>
-                <li><a href="">Bantuan</a></li>
+                <li><a href="/home">Beranda</a></li>
+                <li><a href="/pemesanan">Pemesanan</a></li>
+                <li><a href="/riwayat">Riwayat</a></li>
+                <li><a href="/help-center">Bantuan</a></li>
             </ul>
             <div class="profile">
                 <img src="{{ asset('img/assets/fi_user.png') }}" alt="">
@@ -879,9 +879,9 @@
                             </div>
                         </div>
 
-                        <div class="text-right mt-3">
+                        <a href="/pembayaran" class="text-right mt-3">
                             <button class="font-bold text-white bg-black py-2 px-5 rounded-xl">Lanjutkan</button>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
