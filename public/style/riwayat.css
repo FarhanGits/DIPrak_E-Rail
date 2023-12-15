@@ -1,0 +1,513 @@
+/* Import Font */
+
+@font-face {
+    font-family: 'PoppinsReguler';
+    src: url('/fonts/Poppins-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PoppinsBold';
+    src: url('/fonts/Poppins-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PoppinsSemiBold';
+    src: url('/fonts/Poppins-SemiBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'PoppinsExtraBold';
+    src: url('/fonts/Poppins-ExtraBold.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+a,
+li {
+    text-decoration: none;
+}
+
+button,
+input {
+    background: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    top: 24px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.navbar .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar .logo {
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'PoppinsExtraBold', sans-serif;
+}
+
+.logo .right {
+    color: #0B56A7;
+}
+
+.logo .left {
+    color: #202020;
+}
+
+.search {
+    flex: 1;
+    margin-left: 175px;
+    margin-right: 140px;
+}
+
+input {
+    width: 150%;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 15px;
+    opacity: 30%;
+}
+
+.search img {
+    position: absolute;
+    width: 1.5em;
+    background-color: #0B56A7;
+    border-radius: 50px;
+    transform: translateY(-120%);
+    left: 40.3em;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    font-family: 'PoppinsReguler';
+}
+
+.nav-list li {
+    margin-right: 1.5rem;
+}
+
+.nav-list a {
+    color: #202020;
+}
+
+.profile {
+    margin-left: 20vh;
+}
+
+.profile img {
+    width: 2em;
+}
+
+.container {
+    padding: 0px 75px 0px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    margin-right: 75px;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #F5F5F5;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #0B56A7;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #0B56A7;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.filter-form {
+    width: 350px;
+    height: auto;
+    padding: 25px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 3px solid #000;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-devider {
+    width: 100%;
+    border: 0.5px solid gray;
+    margin: 20px 0px;
+}
+
+.filter1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.filter-name img {
+    height: 10px;
+}
+
+.filter1-list {
+    display: flex;
+}
+
+.datefilter {
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.datelabel {
+    font-size: 10px;
+}
+
+.filter2-list,
+.filter3-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#checkbox {
+    width: 40px;
+}
+
+.checkbox-label {
+    margin: 3px 0px 0px 10px;
+}
+
+.add-filter {
+    margin-top: 20px;
+    background-color: #0B56A7;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-size: 18px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.reset-filter {
+    margin-top: 20px;
+    border-radius: 30px;
+    background-color: #F5F5F5;
+    color: #0B56A7;
+    border: 1px solid gray;
+    font-size: 18px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* .menu-item {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
+
+.dropdown-content label {
+    display: block;
+    padding: 10px;
+}
+
+.menu-item+.dropdown-content {
+    margin-top: 5px;
+}
+
+.dropdown-section:hover .dropdown-content {
+    max-height: 300px;
+} */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ticket {
+    border-radius: 10px;
+    border: 3px solid #000;
+    margin-top: 50px;
+    width: 100%;
+    color: black;
+}
+
+.ticket-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 35px;
+    background-color: #0B56A7;
+    color: white;
+}
+
+.header-info {
+    background-color: #0B56A7;
+}
+
+.header-status {
+    padding: 10px;
+    background-color: #D6EDFC;
+    color: #0B56A7;
+    border-radius: 5px;
+}
+
+.ticket-info {
+    padding: 15px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.ticket-route {
+    display: flex;
+    margin-top: 15px;
+}
+
+.ticket-route img {
+    height: 20px;
+    margin: 7px 15px 0px;
+}
+
+footer {
+    background-color: rgba(11, 86, 167, 1);
+    height: 300px;
+    padding: 80px;
+    box-sizing: border-box;
+    margin-top: 200px;
+}
+
+.logoFooter a {
+    font-family: 'PoppinsExtraBold', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoFooter a:first-child {
+    color: white;
+}
+
+.logoFooter a:nth-child(2) {
+    color: black;
+}
+
+.sub-row1 {
+    color: white;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-row1-column1 p:first-child {
+    font-weight: bold;
+    margin-bottom: -10px;
+    font-family: 'PoppinsSemiBold', sans-serif;
+}
+
+.sub-row1-column1 p:nth-child(2) {
+    font-size: 12px;
+    font-family: 'PoppinsReguler', sans-serif;
+}
+
+.sub-row1-column1 {
+    width: max-content;
+}
+
+.sub-row1-column2 {
+    font-family: 'PoppinsReguler', sans-serif;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+form {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.sub-row1-column2 input {
+    border: none;
+    /* Hapus border di sisi lain */
+    border-bottom: 1px solid #ffffff;
+    /* Atur border bawah dengan warna dan lebar sesuai kebutuhan */
+    outline: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.labelButton {
+    display: flex;
+    justify-content: space-between;
+}
+
+.labelButton button {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    margin-right: 10px;
+}
+
+.labelButton img {
+    width: 15px;
+}
+
+.labelButton label {
+    margin-left: 15px;
+}
+
+.row2 {
+    font-family: 'PoppinsReguler', sans-serif;
+    font-size: 12px;
+    color: white;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+
+.row2 .nav-menu {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row2 .sosmed {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row2 a {
+    color: white;
+}
+
+/* ---------------------------------------------------- All Card Font ---------------------------------------------------- */
+.headline {
+    font-size: 35px;
+    font-family: 'PoppinsBold';
+}
+
+.semilarge-text {
+    font-size: 24px;
+}
+
+.medium-text {
+    font-size: 20px;
+}
+
+.detail-text {
+    font-size: 15px;
+}
+
+/* ada lagi */
+
+/* ---------------------------------------------------- All Card Font ---------------------------------------------------- */
