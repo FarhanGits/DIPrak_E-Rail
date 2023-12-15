@@ -25,7 +25,7 @@
                 <li><a href="">Beranda</a></li>
                 <li><a href="">Pemesanan</a></li>
                 <li><a href="">Riwayat</a></li>
-                <li><a href="">Bantuan</a></li>
+                <li><a href="/helpcentre">Bantuan</a></li>
             </ul>
             <div class="profile">
                 <img src="{{ asset('img/assets/fi_user.png') }}" alt="">
