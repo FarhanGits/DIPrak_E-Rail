@@ -21,10 +21,10 @@
                 <img src="{{ asset('img/assets/icons8-search-50.png') }}" alt="">
             </div>
             <ul class="nav-list">
-                <li><a href="">Beranda</a></li>
-                <li><a href="">Pemesanan</a></li>
-                <li><a href="">Riwayat</a></li>
-                <li><a href="">Bantuan</a></li>
+                <li><a href="/home">Beranda</a></li>
+                <li><a href="/pemesanan">Pemesanan</a></li>
+                <li><a href="/riwayat">Riwayat</a></li>
+                <li><a href="/helpcentre">Bantuan</a></li>
             </ul>
             <div class="profile">
                 <img src="{{ asset('img/assets/fi_user.png') }}" alt="">
@@ -41,16 +41,18 @@
         </section>
         <section style="width: 100%; column-count:2;  display: flex;">
             <div class="rute">
-                </div>
-                <img src="{{ asset('img/assets/kreta-cepat.jpg') }}" alt="" style="border: 1px solid #000; width : 1000px ; height : 500px">
-                </div>
+            </div>
+            <img src="{{ asset('img/assets/kreta-cepat.jpg') }}" alt=""
+                style="border: 1px solid #000; width : 1000px ; height : 500px">
+            </div>
             </div>
         </section>
         <section style="width: 100%; column-count:2;  display: flex;">
             <div class="rute">
-                </div>
-                <img src="{{ asset('img/assets/Jalur.jpg') }}" alt="" style="border: 1px solid #000; width : 300px ; height : 400px">
-                </div>
+            </div>
+            <img src="{{ asset('img/assets/Jalur.jpg') }}" alt=""
+                style="border: 1px solid #000; width : 300px ; height : 400px">
+            </div>
             </div>
             <div class="price-detail">
                 <div class="tittle">
@@ -61,11 +63,12 @@
                         Layanan Pelanggan
                     </div>
                     <div class="detail">
-                        Di manapun Anda berada, kami ada untuk membantu Anda. Hubungi kami melalui call center kami di bawah ini.
+                        Di manapun Anda berada, kami ada untuk membantu Anda. Hubungi kami melalui call center kami di
+                        bawah ini.
                     </div>
                     <div class="detail">
-                        Email     :  customercare@Erail.com <br>
-                        Whatsapp  : (+62)811-193-70777 (hanya melayani chat)
+                        Email : customercare@Erail.com <br>
+                        Whatsapp : (+62)811-193-70777 (hanya melayani chat)
                     </div>
                     <div class="detail">
                         Anda juga dapat menyampaikan masukan atau pertanyaan melalui <br>
