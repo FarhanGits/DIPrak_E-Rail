@@ -25,6 +25,11 @@ Route::get('/home', function () {
     return view('homepage');
 })->name('home');
 
+
+Route::get('/helpcentre', function () {
+    return view('helpcentre');
+})->name('helpcentre');
+
 Route::get('/riwayat', function () {
     return view('riwayat');
 })->name('riwayat');
@@ -60,3 +65,4 @@ Route::get('/pilih-kursi', function () {
 Route::get('/detail', function () {
     return view('detail-tiket');
 })->name('detail');
+
